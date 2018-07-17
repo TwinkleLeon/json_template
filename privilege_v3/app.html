@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <include file="static/html/speed.min.html" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>会员特权</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <include file="static/html/public/h5/gb750.html" />
+    <!-- <include file="static/html/tongji.html" /> -->
+    <script type="text/javascript">
+       var g_isWx = {$iswx};
+       var g_isLogin = {$login_status};
+       var g_sign_package  = {$sign};
+       var g_nickname  = '{$nickname}';
+       var g_headurl   = '{$headurl}';
+       var g_level	 = {$level};
+       var g_exp  = {$exp};
+       var g_levelinfo  = {$levelinfo};
+       var g_levelPrivileges = {$levelPrivileges};//等级值对应的特权
+       var g_availdPrivilges = {$availdPrivilges}; //可用的特权卡
+       var g_awardPrivileges = {$awardPrivileges};
+       var g_ad = {$ad};//广告栏
+       var g_cdn = '{$CDN}';
+    </script>
+<link href="/static/privilege_v3/css/style.css" rel="stylesheet"></head>
+<!-- 注：加ontouchstart使css：active生效 -->
+<body ontouchstart="">
+<div id="app">
+	<router-view></router-view>
+</div>
+<script type="text/javascript" src="//sslstatic.xiaoyusan.com/js/zepto-1.2.0.min.js"></script>
+<script type="text/javascript" src="//res.wx.qq.com/open/js/jweixin-1.2.0.js" charset="utf-8"></script>
+<script type="text/javascript" src="//sslstatic.xiaoyusan.com/js/errReport.js?t=2016120101"></script>
+<script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+<script>
+     var vConsole = new VConsole();
+</script>
+<script type="text/javascript" src="/static/privilege_v3/js/manifest.js"></script><script type="text/javascript" src="/static/privilege_v3/js/vendor.js"></script><script type="text/javascript" src="/static/privilege_v3/js/app.js"></script></body>
+</html>

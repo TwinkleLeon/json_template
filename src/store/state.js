@@ -1,0 +1,1 @@
+export default {};//全局state配置
